@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "t\u00E2che-Incident_worker_cubee",
+      "appliesTo": "Textures/Incident/Incident_worker_cubee.cs",
+      "type": "launch"
+    }
+  ]
+}

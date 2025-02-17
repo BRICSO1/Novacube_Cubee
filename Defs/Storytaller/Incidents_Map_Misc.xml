@@ -1,0 +1,9 @@
+<Defs>
+  <IncidentsDefs>
+    <defName>NC_Cubee_Raid</defName>
+    <workerClass>YourNamespace.CubeeRaid</workerClass>
+    <category>ThreatBig</category>
+    <baseChance>0.1</baseChance>
+    <favorability>Bad</favorability>
+    </IncidentsDefs>
+</Defs>
