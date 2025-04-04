@@ -1,9 +1,18 @@
 <Defs>
   <IncidentsDefs>
     <defName>NC_Cubee_Raid</defName>
-    <workerClass>YourNamespace.CubeeRaid</workerClass>
-    <category>ThreatBig</category>
-    <baseChance>0.1</baseChance>
+    <workerClass>CubeeIncident.CubeeRaid</workerClass>
+    <category>Misc</category>
+    <baseChance>1</baseChance>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
     <favorability>Bad</favorability>
+    <letterText>cubees attack your base </letterText>
+    <letterDef>NegativeEvent</letterDef>
+    <pointsScaleable>true</pointsScaleable>
+    <tale>bigRaid</tale>
+    <minRefireDays>1</minRefireDays>
+    
     </IncidentsDefs>
 </Defs>

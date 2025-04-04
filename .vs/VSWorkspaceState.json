@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Assemblies",
     "\\Defs",
-    "\\Defs\\ThingDefs_Races",
-    "\\Patches"
+    "\\Defs\\Misc",
+    "\\Defs\\Misc\\LifeStageDefs",
+    "\\Defs\\SoundDefs",
+    "\\Source"
   ],
-  "SelectedNode": "\\Defs\\ThingDefs_Races\\Races_Animal_Novacube_Cubee.xml",
   "PreviewInSolutionExplorer": false
 }

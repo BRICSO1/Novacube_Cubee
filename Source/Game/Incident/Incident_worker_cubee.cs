@@ -2,7 +2,7 @@ using RimWorld;
 using Verse;
 using System.Collections.Generic;
 
-
+namespace CubeeIncident { 
 public class IncidentWorker_CubeeRaid : IncidentWorker
 {
     protected override bool TryExecuteWorker(IncidentParms parms)
@@ -67,17 +67,19 @@ public class IncidentWorker_CubeeRaid : IncidentWorker
     }
 }
         // Positionner les animaux sur la carte
-        IntVec3 spawnSpot = CellFinder.RandomEdgeCell(map);
-        foreach (Pawn animal in animals)
+        IntVec3 spawnSpot;
+        if (!RCellFinder.TryFindRandomPawnEntryCell(map, out spawnSpot, CellFinder.EdgeRoadChance_Hostile))
         {
-            GenSpawn.Spawn(animal, spawnSpot, map);
+            Log.Warning("Impossible de trouver une position pour le raid.");
+            return false;
         }
 
-        // Envoyer un message au joueur
-        Messages.Message($"Bzzz..", MessageTypeDefOf.ThreatBig, new TargetInfo(spawnSpot, map));
+
+// Envoyer un message au joueur
+Messages.Message($"Bzzz..", MessageTypeDefOf.ThreatBig, new TargetInfo(spawnSpot, map));
         Log.Message($"Nombre d'animaux: {animals.Count}");
 
 return true;
     }
 
-
+}
